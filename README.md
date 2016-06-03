@@ -1,0 +1,1 @@
+轨迹系列同人小说《Farewell.》和《Miracle/Mirage》的公式站。
