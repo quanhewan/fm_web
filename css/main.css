@@ -95,18 +95,87 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+a,
+a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
 
+small {
+    font-size: 60%;
+}
 
+.float-right{
+    float: right;
+}
 
+.header {
+    position: relative;
+    width: 1024px;
+    height: 480px;
+    margin: auto;
+    background: url(../img/M_cover_small.jpg) no-repeat center top;
+    background-size: 1024px 700px;
+    color: #fff;
+}
 
+nav {
+    position: relative;
+    width: 80%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #fff;
+}
 
+.logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 40px;
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
+.nav-ul {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
 
+.nav-li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 20px;
+}
 
+.hero-content {
+    height: 300px;
+    text-align: center;
+}
 
+.text-jumbo {
+    margin: 60px auto 20px auto;
+    font-size: 40px;
+}
 
+.extra-content {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    font-size: 14px;
+}
 
+.body {
+    width: 1024px;
+    margin: auto;
+    padding: 0 40px;
+}
 
 
 
