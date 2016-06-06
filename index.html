@@ -53,7 +53,7 @@
             <section class="clearfix" id="about">
                 <h2 class="section-title">Farewell.Evolution</h2>
                 <p class="section-description">5年前完售的空之轨迹同人小说合志《Farewell.》（加料 & 修订）重印版</p>
-                <div class="farewell-carousel row-container">
+                <div class="novel-carousel row-container">
                     <!-- below is the element to be repeated in JS -->
                     <div class="column-container-3" id="farewell-preview">
                         <div class="novel-container">
@@ -80,44 +80,26 @@
             <section class="clearfix">
                 <h2 class="section-title">Miracle/Mirage</h2>
                 <p class="section-description">空零碧闪轨迹系列的同人小说合志。冷 CP 集合。居家旅行垫桌防身的一本砖头。不来一本吗！</p>
-                <div class="row-container clearfix">
-                    <div class="column-container-3">
+                <div class="novel-carousel row-container">
+                    <!-- below is the element to be repeated in JS -->
+                    <div class="column-container-3" id="mirage-preview">
                         <div class="novel-container">
                             <div class="novel-thumbnail"></div>
-                            <h3 class="novel-title">When Summer's in the Meadow</h3>
+                            <h3 class="novel-title">Fairytale</h3>
                             <p class="novel-cp">艾丝蒂尔×约修亚</p>
                             <p><span class="novel-writer">炎浅</span><span class="novel-painter">sageaini</span></p>
-                            <div class="novel-preview">
-                                <div class="novel-preview-content">
+                            <div class="novel-preview-mask">
+                                <div class="novel-preview-wrapper">
                                     <div class="close-preview float-right">关闭</div>
-                                    <h3>Fairytale</h3>
-                                    <h5>艾丝蒂尔×约修亚</h5>
-                                    <p>炎浅</p>
-                                    <p>转眼间，天气就渐渐暖起来了。这期间艾丝蒂尔白天打工、晚上去酒馆里跳跳舞，到了回家的时候，就拜托青年陪她同行。似乎日子过着过着，这也变成了两人间的惯例。随着逐渐熟识，他们开始聊起一些自己的事。少女总是喋喋不休着店铺里的趣闻，一连串银铃般的笑声接踵而至。而青年更多时候只是细细听她讲，偶尔发表一两句自己对此的看法。
-                                        <br>比如这个晚上，两人也是如此相处。青年看着矮他一头多的娇小身影兔子般轻快向前跃去，不禁叹了口气。他想自己彻底掉进了这个美丽的深渊，不想挣脱也挣脱不了——想到这儿，忽然心里亮着的阳光被乌云笼盖，空虚地泛起一阵阵疼痛。内心深处的黑暗里，缓缓睁开一双暗金色的眼睛。小小的身影浮出来，端着枪，目光黯淡金属般发亮。稚嫩的声音冷冷响起来，“——你真的能得到它吗？”
-                                        <br>……经历了那种事情的自己，真的能用自己双手，抓住这一切吗——
-                                        <br>“……约修亚？”耳旁清亮的声音模模糊糊，“约修亚？”
-                                    </p>
+                                    <h3 class="novel-title">Fairytale</h3>
+                                    <h5 class="novel-cp">艾丝蒂尔×约修亚</h5>
+                                    <p class="novel-writer">炎浅</p>
+                                    <p class="novel-preview-content"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column-container-3">
-                        <div class="novel-container">
-                            <div class="novel-thumbnail"></div>
-                            <h3 class="novel-title">Fairytale</h3>
-                            <p class="novel-cp">艾丝蒂尔×约修亚</p>
-                            <p><span class="novel-writer">炎浅</span><span class="novel-painter">sageaini</span></p>
-                        </div>
-                    </div>
-                    <div class="column-container-3">
-                        <div class="novel-container">
-                            <div class="novel-thumbnail"></div>
-                            <h3 class="novel-title">Fairytale</h3>
-                            <p class="novel-cp">艾丝蒂尔×约修亚</p>
-                            <p><span class="novel-writer">炎浅</span><span class="novel-painter">sageaini</span></p>
-                        </div>
-                    </div>
+                    <!-- End of repeated elements -->
                 </div>
             </section>
             <!-- End of Miracle section -->
@@ -126,13 +108,13 @@
                 <h2 class="section-title">Order</h2>
                 <p class="section-description"></p>
                 <div class="row-container clearfix">
-                    <div class="column-container-2">
+                    <div class="column-container-2 order-shop">
                         <div class="order-container">
                             <h3 class="order-title">Event</h3>
                             <p class="order-description">CP18 G49 药与玻璃渣</p>
                         </div>
                     </div>
-                    <div class="column-container-2">
+                    <div class="column-container-2 order-online">
                         <div class="order-container">
                             <h3 class="order-title">Online</h3>
                             <p class="order-description"><a href="">淘宝链接请点我</a></p>
@@ -145,33 +127,45 @@
             <section class="clearfix" id="download">
                 <h2 class="section-title">Download</h2>
                 <p class="section-description">点击链接将调整到下载页面，格式为.pdf</p>
-                <div class="row-container clearfix">
+                <div class="download-carousel row-container">
                     <div class="column-container-4">
                         <div class="download-container">
+                            <div class="download-thumbnail"></div>
                             <h3 class="download-title">Freetalk</h3>
-                            <p class="download-description">CP18 G49 药与玻璃渣</p>
-                            <div class="download-link"><a href="">icon</a></div>
+                            <p class="download-description">一群作者们的闲聊<br>八卦 吐槽 爆笑<br>你想知道的一切</p>
+                            <div class="download-link"><a href="">download</a></div>
                         </div>
                     </div>
                     <div class="column-container-4">
                         <div class="download-container">
-                            <h3 class="download-title">Freetalk</h3>
-                            <p class="download-description">CP18 G49 药与玻璃渣</p>
-                            <div class="download-link"><a href="">icon</a></div>
+                            <div class="download-thumbnail"></div>
+                            <h3 class="download-title">A Drowning Fish 番外</h3>
+                            <p class="download-description">作者<br>无盐の波罗的海</p>
+                            <div class="download-link"><a href="">download</a></div>
                         </div>
                     </div>
                     <div class="column-container-4">
                         <div class="download-container">
-                            <h3 class="download-title">Freetalk</h3>
-                            <p class="download-description">CP18 G49 药与玻璃渣</p>
-                            <div class="download-link"><a href="">icon</a></div>
+                            <div class="download-thumbnail"></div>
+                            <h3 class="download-title">食之轨迹</h3>
+                            <p class="download-description">我怎么知道这帮人<br>到底在搞什么飞机</p>
+                            <div class="download-link"><a href="">download</a></div>
                         </div>
                     </div>
                     <div class="column-container-4">
                         <div class="download-container">
-                            <h3 class="download-title">Freetalk</h3>
-                            <p class="download-description">CP18 G49 药与玻璃渣</p>
-                            <div class="download-link"><a href="">icon</a></div>
+                            <div class="download-thumbnail"></div>
+                            <h3 class="download-title">往事书</h3>
+                            <p class="download-description">这是一本插图</p>
+                            <div class="download-link"><a href="">download</a></div>
+                        </div>
+                    </div>
+                    <div class="column-container-4">
+                        <div class="download-container">
+                            <div class="download-thumbnail"></div>
+                            <h3 class="download-title">占位</h3>
+                            <p class="download-description">这是一本插图</p>
+                            <div class="download-link"><a href="">download</a></div>
                         </div>
                     </div>
                 </div>
@@ -180,14 +174,19 @@
             <section class="clearfix" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <p class="section-description">欢迎留下爱的 Message，我们将用邮件形式回复哦~</p>
-                <div class="row-container clearfix">
-
-                </div>
+                <form id="contact-form" class="contact-form row-container clearfix">
+                    <input name="email" type="email" placeholder="你的邮箱地址？">
+                    <input name="name" placeholder="你的昵称？">
+                    <textarea name="content" placeholder="有什么想对我们说的？"></textarea>
+                    <button value="submit">我要说！</button>
+                </form>
             </section>
             <!-- End of Contact section -->
         </div>
 
-        <div class="footer">药与玻璃渣 2016</div>
+        <div class="footer">
+            <div class="copyright">© 药与玻璃渣 2016 | All right reserved</div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

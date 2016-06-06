@@ -1,17 +1,17 @@
 $(document).ready(function () {
     // Toggle menu: may or may not use
-    var showMenu = false;
-    var toggleMenu = function(){
-        if(!showMenu) {
-          $(".nav-ul").show();
-          $("body").offset({left: -200});
-        } else {
-          $("body").offset({left: 0});
-          $(".nav-ul").hide();
-        }
-        showMenu = !showMenu;
-    };
-    $(".menu-button").click(toggleMenu);
+    // var showMenu = false;
+    // var toggleMenu = function(){
+    //     if(!showMenu) {
+    //       $(".nav-ul").show();
+    //       $("body").offset({left: -200});
+    //     } else {
+    //       $("body").offset({left: 0});
+    //       $(".nav-ul").hide();
+    //     }
+    //     showMenu = !showMenu;
+    // };
+    // $(".menu-button").click(toggleMenu);
 
     // write JSON data into DOM
     var jsonToDOM = function (json, prop, el, thumbClass) {
@@ -35,35 +35,27 @@ $(document).ready(function () {
     };
 
     // slick functions
-    var slickInit = function(el){
+    var slickInit = function(el, count, rescount){
         el.slick({
             dots: true,
             dotsClass: "slick-dots",
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: count,
+            slidesToScroll: count,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 800,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
+                        slidesToShow: rescount,
+                        slidesToScroll: rescount
                     }
                 },
                 {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+                   breakpoint: 500,
+                   settings: {
+                       slidesToShow: rescount - 1,
+                       slidesToScroll: rescount - 1
+                   }
                 }
             ]
         });
@@ -72,7 +64,9 @@ $(document).ready(function () {
     $.getJSON("src/novels_preview.json", function(data){
         console.log(data);
         jsonToDOM(data, "farewell", $("#farewell-preview"), "novel-thumbnail");
-        slickInit($(".farewell-carousel"));
+        jsonToDOM(data, "mirage", $("#mirage-preview"), "novel-thumbnail");
+        slickInit($(".novel-carousel"), 3, 2);
+        slickInit($(".download-carousel"), 4, 2);
     });
 
 });

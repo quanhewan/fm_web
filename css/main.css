@@ -126,7 +126,7 @@ small {
 
 nav {
     position: relative;
-    width: 90%;
+    width: 904px;
     height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -190,7 +190,6 @@ ul {
 }
 
 .body {
-    /*width: 1024px;*/
     max-width: 100%;
     margin: auto;
 }
@@ -219,20 +218,16 @@ section:nth-child(even) {
 .row-container {
     width: 1024px;
     margin: auto;
-    /*text-align: center;*/
 }
 
 
 .column-container-2 {
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    /*margin: 36px 34px;*/
+    width: 400px;
     text-align: left;
 }
 
 .column-container-3 {
-    /*display: inline-block;*/
     width: 256px;
     height: 340px;
     margin: 36px 42px;
@@ -248,7 +243,7 @@ section:nth-child(even) {
     display: inline-block;
     width: 196px;
     height: 280px;
-    margin: 36px 20px;
+    margin: 36px 30px;
 }
 
 .column-container-3:hover,
@@ -337,6 +332,7 @@ span.novel-painter {
     font-weight: 400;
 }
 
+/* Style for sliders */
 .slick-prev:before,
 .slick-next:before {
     font-size: 30px;
@@ -345,6 +341,144 @@ span.novel-painter {
 
 .slick-dots {
     margin: 20px 0;
+}
+
+.slick-prev {
+    left: -15px;
+}
+
+.slick-next {
+    right: -15px;
+}
+
+.order-container {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    padding-left: 180px;
+}
+
+.order-shop{
+    background: url(../img/icon/shop_big.png) 110px 52px no-repeat;
+    background-size: 40px;
+}
+
+.order-online{
+    background: url(../img/icon/taobao_big.png) 110px 52px no-repeat;
+    background-size: 40px;
+}
+
+.download-container {
+    position: relative;
+    width: 196px;
+    height: 280px;
+    background: #FFF;
+
+    border: 1px solid rgba(151, 151, 151, 0.14);
+
+    -webkit-transition: border .5s, box-shadow .5s;
+    transition: border .5s, box-shadow .5s;
+}
+
+.download-container:hover,
+.download-container::selection{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.download-container h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.download-container p{
+    font-size: 12px;
+}
+
+.download-thumbnail {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+    background: #b3d4fc;
+    background-size: 100% 100%;
+    border-radius: 100%;
+}
+
+.download-title {
+    /* Deal with too long title */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.download-link {
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, 0);
+    background: url(../img/icon/download.png) no-repeat center top;
+}
+
+.contact-form {
+    width: 624px;
+    margin-bottom: 200px;
+    padding-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 600px;
+    margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding-left: 24px;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #9B9B9B;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #81AEE2;
+}
+
+.contact-form input {
+    height: 60px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    padding-top: 20px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    height: 70px;
+    margin: 20px 0;
+    background: #4A90E2;
+    border: none;
+    box-shadow: none;
+    border-radius: 100px;
+    font-size: 24px;
+    color: #FFF;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    width: 904px;
+    margin: 0 auto;
+    border-top: 1px solid #E0E0E0;
+    padding: 30px 0 130px 0;
 }
 
 /* ==========================================================================
@@ -426,34 +560,65 @@ span.novel-painter {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (max-width: 680px) {
+@media only screen and (min-width: 1440px) {
     /* Style adjustments for viewports that meet the condition */
-
-    .menu-button {
-        display: block;
+    .header {
+        width: 1440px;
+        background: url(../img/M_cover_small.jpg) no-repeat center top;
+        background-size: 1440px 984px;
     }
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    .slick-prev {
+        left: -50px;
     }
 
-    .nav-ul {
-        display: none;
+    .slick-next {
+        right: -50px;
+    }
+}
 
-        position: absolute;
-        top: 72px;
-        right: -200px;
-        width: 120px;
-        color: #222;
+
+@media only screen and (max-width: 960px) {
+    /* Style adjustments for viewports that meet the condition */
+    .body {
+        width: 100%;
+    }
+
+    nav,
+    .copyright {
+        width: 90%;
+    }
+
+    .logo {
+        font-size: 48px;
     }
 
     .nav-li {
-        display: block;
-        padding: 0 0 15px 0;
+        font-size: 20px;
+        padding: 5px 10px;
     }
+
+    .row-container {
+        width: 85%;
+    }
+
+    .column-container-3 {
+        margin: 36px 8px;
+    }
+
+    .slick-prev {
+        left: -40px;
+    }
+
+    .slick-next {
+        right: -40px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 95%;
+    }
+
 
 }
 
