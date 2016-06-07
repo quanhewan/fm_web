@@ -7,6 +7,7 @@
         <entry key="check-nonjava-files" value="false" />
         <entry key="check-test-classes" value="false" />
         <entry key="location-1" value="LOCAL_FILE:/Users/quwan/Library/Preferences/IntelliJIdeaLI1/checkstyle/linkedin-checkstyle.xml:LinkedIn Style" />
+        <entry key="scan-before-checkin" value="false" />
         <entry key="suppress-errors" value="true" />
         <entry key="thirdparty-classpath" value="" />
       </map>
