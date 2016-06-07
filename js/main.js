@@ -44,14 +44,14 @@ $(document).ready(function () {
             slidesToScroll: count,
             responsive: [
                 {
-                    breakpoint: 800,
+                    breakpoint: 960,
                     settings: {
                         slidesToShow: rescount,
                         slidesToScroll: rescount
                     }
                 },
                 {
-                   breakpoint: 500,
+                   breakpoint: 540,
                    settings: {
                        slidesToShow: rescount - 1,
                        slidesToScroll: rescount - 1
