@@ -591,6 +591,7 @@ span.novel-painter {
     /* Style adjustments for viewports that meet the condition */
     .body {
         width: 100%;
+        font-weight: 200;
     }
 
     nav,
