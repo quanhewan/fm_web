@@ -305,12 +305,12 @@ span.novel-painter {
     width: 6rem;
 }
 
-span.novel-writer {
+.novel-writer {
     padding-left: 1.125rem;
     background: url(../img/icon/pen.png) no-repeat left;
 }
 
-span.novel-painter {
+.novel-painter {
     padding-left: 1.5rem;
     background: url(../img/icon/pallette.png) no-repeat left;
 }
