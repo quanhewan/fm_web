@@ -361,25 +361,25 @@ span.novel-painter {
 
 .order-container {
     margin-top: 3.75rem;
-    margin-bottom: 100px;
-    padding-left: 180px;
+    margin-bottom: 6.25rem;
+    padding-left: 11.25rem;
 }
 
 .order-shop{
     background: url(../img/icon/shop_big.png) 110px 52px no-repeat;
-    background-size: 40px;
+    background-size: 2.5rem;
 }
 
 .order-online{
     background: url(../img/icon/taobao_big.png) 110px 52px no-repeat;
-    background-size: 40px;
+    background-size: 2.5rem;
 }
 
 .download-container {
     position: relative;
     margin: auto;
-    width: 196px;
-    height: 280px;
+    width: 12.25rem;
+    height: 17.5rem;
     background: #FFF;
 
     border: 1px solid rgba(151, 151, 151, 0.14);
@@ -405,8 +405,8 @@ span.novel-painter {
 
 .download-thumbnail {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     margin-top: 1.875rem;
     background: #b3d4fc;
     background-size: 100% 100%;
@@ -423,22 +423,22 @@ span.novel-painter {
 .download-link {
     position: absolute;
     width: 100%;
-    height: 23px;
+    height: 1.4375rem;
     bottom: 1.25rem;
     color: rgba(255, 255, 255, 0);
     background: url(../img/icon/download.png) no-repeat center top;
 }
 
 .contact-form {
-    width: 624px;
+    width: 39rem;
     margin-bottom: 12.5rem;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 .contact-form input,
 .contact-form textarea {
     display: block;
-    width: 600px;
+    width: 37.5rem;
     margin: 10px 0;
 }
 
@@ -461,19 +461,19 @@ span.novel-painter {
 }
 
 .contact-form textarea {
-    height: 150px;
+    height: 9.375rem;
     padding-top: 1.25rem;
 }
 
 .contact-form button {
     display: block;
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
     margin: 1.25rem 0;
     background: #4A90E2;
     border: none;
     box-shadow: none;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     font-size: 1.5rem;
     color: #FFF;
 }
@@ -604,7 +604,7 @@ span.novel-painter {
 
     .nav-li {
         font-size: 1.25rem;
-        padding: 5px 10px;
+        padding: 0.3125rem 0.625rem;
     }
 
     .row-container {
