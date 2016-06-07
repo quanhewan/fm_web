@@ -358,6 +358,10 @@ span.novel-painter {
     font-size: 1.25rem;
 }
 
+.novel-preview-wrapper p{
+    margin-bottom: 2.5em;
+}
+
 .novel-preview-wrapper p:last-child{
     padding-bottom: 3.75rem;
 }
