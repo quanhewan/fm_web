@@ -54,7 +54,8 @@ $(document).ready(function () {
                    breakpoint: 540,
                    settings: {
                        slidesToShow: rescount - 1,
-                       slidesToScroll: rescount - 1
+                       slidesToScroll: rescount - 1,
+                       autoplay: true
                    }
                 }
             ]
@@ -67,6 +68,24 @@ $(document).ready(function () {
         jsonToDOM(data, "mirage", $("#mirage-preview"), "novel-thumbnail");
         slickInit($(".novel-carousel"), 3, 2);
         slickInit($(".download-carousel"), 4, 2);
+
+        $(".novel-wrapper").click(function(){
+            var toAppend = $(".novel-preview-mask-final");
+            toAppend.empty();
+            $(this).find(".novel-preview-wrapper").clone().appendTo(toAppend);
+            toAppend.show();
+
+            $(".close-preview").click(function(){
+                $(".novel-preview-mask-final").fadeOut();
+            });
+
+        });
+
+    });
+
+
+    $(".close-preview").click(function(){
+        $(".novel-preview-mask-final").fadeOut();
     });
 
 });

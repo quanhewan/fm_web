@@ -223,7 +223,7 @@ section:nth-child(even) {
 
 .column-container-2 {
     display: inline-block;
-    width: 25rem;
+    width: 40%;
     text-align: left;
 }
 
@@ -243,6 +243,7 @@ section:nth-child(even) {
     width: 16rem;
     height: 21.25rem;
     margin: auto;
+    background: #FFF;
     border: 1px solid rgba(151, 151, 151, 0.14);
     box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -314,9 +315,13 @@ span.novel-painter {
     background: url(../img/icon/pallette.png) no-repeat left;
 }
 
+
 .novel-preview-mask {
     display: none;
+}
 
+.novel-preview-mask-final {
+    display: none;
     z-index: 999;
     position: fixed;
     top: 0;
@@ -326,14 +331,41 @@ span.novel-painter {
     background: rgba(88,88,88,0.6);
 }
 
-.novel-preview-wrapper{
+.novel-preview-wrapper {
     position: absolute;
-    top: 12.5rem;
-    left: 20%;
-    width: 60%;
-    padding: 1.25rem;
-    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 48em;
+    max-width: 100%;
+    max-height: 100%;
+
+    padding: 0 2.5rem;
+
     font-weight: 400;
+    background: #FFF;
+
+    overflow: auto;
+}
+
+.novel-preview-wrapper h3{
+    font-size: 1.875rem;
+    padding-top: 3.75rem;
+}
+
+.novel-preview-wrapper h5{
+    font-size: 1.25rem;
+}
+
+.novel-preview-wrapper p:last-child{
+    padding-bottom: 3.75rem;
+}
+
+.close-preview {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 
 /* Style for sliders */
@@ -362,16 +394,16 @@ span.novel-painter {
 .order-container {
     margin-top: 3.75rem;
     margin-bottom: 6.25rem;
-    padding-left: 11.25rem;
+    padding-left: 45%;
 }
 
 .order-shop{
-    background: url(../img/icon/shop_big.png) 110px 52px no-repeat;
+    background: url(../img/icon/shop_big.png) 20% 3.25rem no-repeat;
     background-size: 2.5rem;
 }
 
 .order-online{
-    background: url(../img/icon/taobao_big.png) 110px 52px no-repeat;
+    background: url(../img/icon/taobao_big.png) 20% 3.25rem no-repeat;
     background-size: 2.5rem;
 }
 
@@ -633,12 +665,48 @@ span.novel-painter {
       font-size: 1em;
     }
 
-    .row-container {
-        /*width: 85%;*/
+    .column-container-2 {
+        width: 49%;
+        padding-top: 5rem;
     }
 
-    .column-container-3 {
-        /*margin: 36px 8px;*/
+    .novel-preview-wrapper {
+        width: 80%;
+        padding: 0 10%;
+    }
+
+    .novel-preview-wrapper h3{
+        font-size: 1.5rem;
+    }
+
+    .novel-preview-wrapper h5{
+        font-size: 1rem;
+    }
+
+    .novel-preview-wrapper p{
+        font-size: 0.75rem;
+    }
+
+    .order-container {
+        text-align: center;
+        padding: 0;
+        bottom: 0;
+    }
+
+    .order-container h3 {
+        display: none;
+    }
+
+
+
+    .order-shop{
+        background: url(../img/icon/shop_big.png) center 2.25rem no-repeat;
+        background-size: 5rem;
+    }
+
+    .order-online{
+        background: url(../img/icon/taobao_big.png) center 2.25rem no-repeat;
+        background-size: 5rem;
     }
 
     .slick-prev {
@@ -658,7 +726,7 @@ span.novel-painter {
 
 }
 
-@media only screen and (max-width: 24rem) {
+@media only screen and (max-width: 25rem) {
   /* Style adjustments for viewports that meet the condition */
 
   .logo {
@@ -677,6 +745,15 @@ span.novel-painter {
   .section-description {
     font-size: 0.75em;
   }
+
+    .order-container p {
+        font-size: 0.8rem;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        display: none;
+    }
 
 }
 
