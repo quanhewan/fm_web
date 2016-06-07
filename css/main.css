@@ -589,9 +589,12 @@ span.novel-painter {
 
 @media only screen and (max-width: 60rem) {
     /* Style adjustments for viewports that meet the condition */
+    body {
+      font-weight: 200;
+    }
+
     .body {
         width: 100%;
-        font-weight: 200;
     }
 
     nav,
@@ -654,7 +657,7 @@ span.novel-painter {
 
 }
 
-@media only screen and (max-width: 24rem) {
+@media only screen and (max-width: 36rem) {
   /* Style adjustments for viewports that meet the condition */
 
   .logo {
