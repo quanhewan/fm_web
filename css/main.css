@@ -773,6 +773,8 @@ span.novel-painter {
     .contact-form textarea,
     .contact-form button {
         width: 85%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .contact-form input,
