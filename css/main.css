@@ -523,6 +523,7 @@ span.novel-painter {
     outline: none;
     box-shadow: none !important;
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
     border: 1px solid #D2D2D2;
     border-radius: 5px;
     font-size: 1.125rem;
@@ -774,7 +775,7 @@ span.novel-painter {
     .contact-form button {
         width: 85%;
         padding-left: 0.5rem;
-        padding-right: 0;
+        padding-right: 0.5rem;
     }
 
     .contact-form input,
