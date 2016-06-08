@@ -75,6 +75,7 @@ $(document).ready(function () {
             $(this).find(".novel-preview-wrapper").clone().appendTo(toAppend);
             toAppend.fadeIn();
 
+
             $(".close-preview").click(function(){
                 $(".novel-preview-mask-final").fadeOut();
             });

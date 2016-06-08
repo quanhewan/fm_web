@@ -280,6 +280,7 @@ section:nth-child(even) {
     height: 13.6875rem;
     background: #b3d4fc;
     background-size: contain;
+    transition: none;
 }
 
 .novel-title,
@@ -381,7 +382,13 @@ span.novel-painter {
 }
 
 .novel-preview-wrapper p:last-child{
-    padding-bottom: 3.75rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.novel-preview-content p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .close-preview {
@@ -780,7 +787,7 @@ span.novel-painter {
 
     .contact-form input,
     .contact-form textarea {
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     .contact-form input {
@@ -789,7 +796,7 @@ span.novel-painter {
 
     .contact-form button {
         height: 3rem;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
 
