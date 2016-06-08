@@ -73,7 +73,7 @@ $(document).ready(function () {
             var toAppend = $(".novel-preview-mask-final");
             toAppend.empty();
             $(this).find(".novel-preview-wrapper").clone().appendTo(toAppend);
-            toAppend.show();
+            toAppend.fadeIn();
 
             $(".close-preview").click(function(){
                 $(".novel-preview-mask-final").fadeOut();
