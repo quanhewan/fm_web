@@ -178,11 +178,11 @@
             <section class="clearfix" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <p class="section-description">欢迎留下爱的 Message，我们将用邮件形式回复哦~</p>
-                <form id="contact-form" class="contact-form row-container clearfix">
-                    <input name="email" type="email" placeholder="你的邮箱地址？">
-                    <input name="name" placeholder="你的昵称？">
+                <form id="contact-form" method="post" class="contact-form row-container clearfix">
+                    <input name="sender_email" type="email" placeholder="你的邮箱地址？">
+                    <input name="sender_name" placeholder="你的昵称？">
                     <textarea name="content" placeholder="有什么想对我们说的？"></textarea>
-                    <button value="submit">我要说！</button>
+                    <button value="submit" type="submit">我要说！</button>
                 </form>
             </section>
             <!-- End of Contact section -->
