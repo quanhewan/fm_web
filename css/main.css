@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font-weight: 100;
+    font-weight: 300;
 }
 
 a,
@@ -283,10 +283,10 @@ section:nth-child(even) {
     transition: none;
 }
 
-.novel-title,
-.novel-cp,
-.novel-writer,
-.novel-painter {
+.novel-wrapper .novel-title,
+.novel-wrapper .novel-cp,
+.novel-wrapper .novel-writer,
+.novel-wrapper .novel-painter {
     /* Deal with too long title */
     white-space: nowrap;
     overflow: hidden;
@@ -398,6 +398,12 @@ span.novel-painter {
 }
 
 /* Style for sliders */
+.slick-prev,
+.slick-next {
+    width: auto;
+    height: auto;
+}
+
 .slick-prev:before,
 .slick-next:before {
     font-size: 1.875rem;
