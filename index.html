@@ -7,12 +7,12 @@
         <meta name="description" content="药与玻璃渣社团：轨迹系列同人志《Farewell.Evolution》和《Miracle/Mirage》的主页">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="slick/slick.css">
-        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="js/slick/slick.css">
+        <link rel="stylesheet" href="js/slick/slick-theme.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -167,23 +167,24 @@
                     <div class="column-container-4">
                         <div class="download-container">
                             <div class="download-thumbnail"></div>
-                            <h3 class="download-title">占位</h3>
-                            <p class="download-description">这是一本插图</p>
+                            <h3 class="download-title">STRAY TRUE END</h3>
+                            <p class="download-description"></p>
                             <div class="download-link"><a href="">download</a></div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- Start of Contact section -->
-            <section class="clearfix" id="contact">
+            <section class="clearfix contact-section" id="contact">
                 <h2 class="section-title">Contact</h2>
                 <p class="section-description">欢迎留下爱的 Message，我们将用邮件形式回复哦~</p>
-                <form id="contact-form" method="post" class="contact-form row-container clearfix">
-                    <input name="sender_email" type="email" placeholder="你的邮箱地址？">
-                    <input name="sender_name" placeholder="你的昵称？">
-                    <textarea name="content" placeholder="有什么想对我们说的？"></textarea>
+                <form id="ajax-contact" method="post" action="mailer.php" class="contact-form row-container clearfix">
+                    <input name="email" type="email" placeholder="你的邮箱地址？" required>
+                    <input name="name" type="text" placeholder="你的昵称？" required>
+                    <textarea id="message" name="message" placeholder="有什么想对我们说的？" required></textarea>
                     <button value="submit" type="submit">我要说！</button>
                 </form>
+                <p id="form-messages"></p>
             </section>
             <!-- End of Contact section -->
         </div>
@@ -206,17 +207,8 @@
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="slick/slick.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
     </body>
 </html>

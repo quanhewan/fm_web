@@ -520,9 +520,12 @@ span.novel-painter {
     background: url(../img/icon/download.png) no-repeat center top;
 }
 
+.contact-section {
+    margin-bottom: 12.5rem;
+}
+
 .contact-form {
     width: 39rem;
-    margin-bottom: 12.5rem;
     padding-top: 2.5rem;
 }
 
