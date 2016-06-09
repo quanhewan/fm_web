@@ -499,7 +499,7 @@ span.novel-painter {
     width: 5rem;
     height: 5rem;
     margin-top: 1.875rem;
-    background: #b3d4fc;
+    background: url(../img/thumbnail/placeholder.jpg);
     background-size: 100% 100%;
     border-radius: 100%;
 }

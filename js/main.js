@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    // Toggle menu: may or may not use
-    // var showMenu = false;
-    // var toggleMenu = function(){
-    //     if(!showMenu) {
-    //       $(".nav-ul").show();
-    //       $("body").offset({left: -200});
-    //     } else {
-    //       $("body").offset({left: 0});
-    //       $(".nav-ul").hide();
-    //     }
-    //     showMenu = !showMenu;
-    // };
-    // $(".menu-button").click(toggleMenu);
 
     // write JSON data into DOM
     var jsonToDOM = function (json, prop, el, thumbClass) {
@@ -63,7 +50,6 @@ $(document).ready(function () {
     };
 
     $.getJSON("src/novels_preview.json", function(data){
-        console.log(data);
         jsonToDOM(data, "farewell", $("#farewell-preview"), "novel-thumbnail");
         jsonToDOM(data, "mirage", $("#mirage-preview"), "novel-thumbnail");
         slickInit($(".novel-carousel"), 3, 2);
