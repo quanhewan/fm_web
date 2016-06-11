@@ -232,6 +232,7 @@ section:nth-child(even) {
 }
 
 .column-container-3 {
+    display: inline-block;
     width: 16rem;
     height: 21.25rem;
     margin: 2.25rem auto;
@@ -521,10 +522,34 @@ span.novel-painter {
 }
 
 .contact-section {
-    margin-bottom: 12.5rem;
+    margin-bottom: 0;
 }
 
+
+.contact-container {
+    margin-top: 5rem;
+    margin-bottom: 7.5rem;
+    height: auto;
+}
+
+.contact-icon {
+    height: 5rem;
+    width: 5rem;
+}
+
+.contact-link {
+    color: #2668B4;
+}
+
+.icon-placeholder {
+    border-radius: 50%;
+}
+
+
 .contact-form {
+    /* Hide the form - mail function does not work on FFF server */
+    display: none;
+
     width: 39rem;
     padding-top: 2.5rem;
 }
@@ -740,6 +765,10 @@ span.novel-painter {
         padding-top: 5rem;
     }
 
+    .column-container-3 {
+        width: 30%;
+    }
+
     .novel-preview-wrapper {
         width: 80%;
         padding: 0 10%;
@@ -784,6 +813,20 @@ span.novel-painter {
 
     .slick-dots li button:before {
         font-size: 6px;
+    }
+
+    .contact-container {
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-icon {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .contact-link {
+        display: none;
     }
 
     .contact-form input,
@@ -834,6 +877,11 @@ span.novel-painter {
 
     .order-container p {
         font-size: 0.8rem;
+    }
+
+    .contact-icon {
+        height: 3rem;
+        width: 3rem;
     }
 
     .slick-prev:before,
