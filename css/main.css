@@ -282,6 +282,7 @@ section:nth-child(even) {
     background: #b3d4fc;
     background-size: contain;
     transition: none;
+    transform: none;
 }
 
 .novel-wrapper .novel-title,
