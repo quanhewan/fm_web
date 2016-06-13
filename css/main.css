@@ -503,6 +503,8 @@ span.novel-painter {
     background: url(../img/thumbnail/placeholder.jpg);
     background-size: 100% 100%;
     border-radius: 100%;
+    transition: none;
+    transform: none;
 }
 
 .download-title {
