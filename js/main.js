@@ -29,6 +29,8 @@ $(document).ready(function () {
             infinite: true,
             slidesToShow: count,
             slidesToScroll: count,
+            useCss: false,
+            //useTransform: false,
             responsive: [
                 {
                     breakpoint: 960,
