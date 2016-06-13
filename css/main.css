@@ -279,8 +279,6 @@ section:nth-child(even) {
 .novel-thumbnail {
     width: 14.75rem;
     height: 13.6875rem;
-    background: #b3d4fc;
-    background-size: contain;
     transition: none;
     transform: none;
 }
