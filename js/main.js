@@ -60,7 +60,8 @@ $(document).ready(function () {
             toAppend.empty();
             $(this).find(".novel-preview-wrapper").clone().appendTo(toAppend);
             toAppend.fadeIn();
-
+            var label = toAppend.find(".novel-title").html();
+            ga('send', 'event', 'novel-preview', 'view', label);
 
             $(".close-preview").click(function(){
                 $(".novel-preview-mask-final").fadeOut();
@@ -113,5 +114,12 @@ $(document).ready(function () {
 
     });
 
+    // GA tracking for downloads
+    $(".download-link").each(function(){
+        var href = $(this).children('a').attr("href").slice(4);
+        $(this).on("click", function(){
+            ga('send', 'event', 'PDF', 'download', href);
+        });
+    });
 
 });
