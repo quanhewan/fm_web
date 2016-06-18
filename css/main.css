@@ -184,7 +184,9 @@ ul {
 
 .extra-content {
     position: absolute;
-    width: 100%;
+    width: 90%;
+    left: 5%;
+    right: 5%;
     bottom: 3.5rem;
     font-size: 0.875rem;
     line-height: 1.125rem;
