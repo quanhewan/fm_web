@@ -247,6 +247,17 @@ section:nth-child(even) {
     margin: 2.25rem auto;
 }
 
+.pv-container {
+    height: 30rem;
+    margin-bottom: 3rem;
+}
+
+.row-container embed {
+    height: 100%;
+    width: 100%;
+    max-width: 39.3rem;
+}
+
 .novel-wrapper {
     width: 16rem;
     height: 21.25rem;
